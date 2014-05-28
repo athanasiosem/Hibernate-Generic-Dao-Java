@@ -1,4 +1,5 @@
-hibernate-DAO-crud
-==================
+Hibernate-Generic-Dao-Java
+==========================
 
-Java Hibernate DAO CRUD
+Sample project in Java that uses Hibernate
+and DAO pattern.
