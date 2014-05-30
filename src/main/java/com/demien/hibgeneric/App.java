@@ -19,40 +19,39 @@ public class App {
 		
 		regionService.deleteAll();
 
-		Region region = new Region();
-		region.setRegionId(1);
-		region.setRegionName("Africa");
-		regionService.save(region);
+		Region region1 = new Region();
+		region1.setRegionId(1);
+		region1.setRegionName("Africa");
+		regionService.save(region1);
 		
-		Country country=new Country();
-		country.setCountryId("EGY");
-		country.setCountryName("Egypt");
-		country.setRegion(region);
-		countryService.save(country);
+		Region region2 = new Region();
+		region2.setRegionId(2);
+		region2.setRegionName("America");
+		regionService.save(region2);
 		
-		country=new Country();
-		country.setCountryId("TUN");
-		country.setCountryName("Tunis");
-		country.setRegion(region);
-		countryService.save(country);
+		Country country1=new Country();
+		country1.setCountryId("EGY");
+		country1.setCountryName("Egypt");
+		country1.setRegion(region1);
+		countryService.save(country1);
 		
+		Country country2=new Country();
+		country2.setCountryId("TUN");
+		country2.setCountryName("Tunis");
+		country2.setRegion(region1);
+		countryService.save(country2);
 		
-		region = new Region();
-		region.setRegionId(2);
-		region.setRegionName("America");
-		regionService.save(region);
+		Country country3=new Country();
+		country3.setCountryId("CAN");
+		country3.setCountryName("Canada");
+		country3.setRegion(region2);
+		countryService.save(country3);
 		
-		country=new Country();
-		country.setCountryId("CAN");
-		country.setCountryName("Canada");
-		country.setRegion(region);
-		countryService.save(country);
-		
-		country=new Country();
-		country.setCountryId("USA");
-		country.setCountryName("USA");
-		country.setRegion(region);
-		countryService.save(country);
+		Country country4=new Country();
+		country4.setCountryId("USA");
+		country4.setCountryName("USA");
+		country4.setRegion(region2);
+		countryService.save(country4);
 
 		List<Country> countryList = countryService.getAll();
 		if (countryList != null) {

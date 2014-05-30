@@ -13,6 +13,7 @@ import javax.persistence.Entity;
 public class Country implements Serializable {
 
 	private static final long serialVersionUID = 7566184847780781908L;
+	
 	@Id
 	@Column(name = "COUNTRY_ID")
 	private String countryId;

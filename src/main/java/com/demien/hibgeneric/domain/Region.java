@@ -10,9 +10,11 @@ import javax.persistence.Id;
 public class Region implements Serializable {
 
 	private static final long serialVersionUID = 8268800253932817168L;
+	
 	@Id
 	@Column(name = "REGION_ID")
 	private Integer regionId;
+	
 	@Column(name = "REGION_NAME")
 	private String regionName;
 
